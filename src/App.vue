@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Bysykkel Bysykkel="Velkommen til Oslo bysykkel"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Bysykkel from './components/CardList.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Bysykkel,
   }
 }
 </script>
 
-<style>
+<style scoped>
+.logo{
+  display: block;
+  margin: 0 auto;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #e6e6e6;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px;
 }
 </style>
